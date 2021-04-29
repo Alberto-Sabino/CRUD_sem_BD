@@ -1,0 +1,4 @@
+1234567890. Esse aqui é só um teste que fiz à mão
+0101010101. Pra não ter que cadastrar os restaurantes
+0000000001. Assim você pode testar todos os métodos antes
+0000000002. Quando você cadastrar vai ficar bonitinho
