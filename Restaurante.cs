@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Configuration;
+using System.IO;
+using System.Text;
 
 namespace CRUD_sem_BD
 {
@@ -13,18 +13,18 @@ namespace CRUD_sem_BD
 
         //StreamWriter é uma função que permite criar, abrir e escrever em arquivos
         StreamWriter writer = new StreamWriter(path, true);
-        
+
         //No começo de todos os métodos que envolvem o arquivo, é bom colocar um objeto StreamWriter .Close() para evitar bugs
 
         public string setRestaurantData()
         {
             string dados, cnpj = "", nomeRest, culinaria, endereco, telefone;
 
-            while(cnpj.Length < 10)//Não permite ao usuário cadastrar um cnpj com menos de 10 caracteres
+            while (cnpj.Length < 10)//Não permite ao usuário cadastrar um cnpj com menos de 10 caracteres
             {
                 Console.WriteLine("\n\nDigite um CNPJ (com mais de 10 digitos): ");
                 cnpj = Console.ReadLine();
-            }            
+            }
 
             Console.WriteLine("Restaurante: ");
             nomeRest = Console.ReadLine();
@@ -35,7 +35,7 @@ namespace CRUD_sem_BD
             Console.WriteLine("Telefone: ");
             telefone = Console.ReadLine();
 
-            dados = cnpj+". Restaurante: " + nomeRest + " | Culinária: " + culinaria+ " | Endereço: " + endereco + " | Telefone: " + telefone;
+            dados = cnpj + ". Restaurante: " + nomeRest + " | Culinária: " + culinaria + " | Endereço: " + endereco + " | Telefone: " + telefone;
             //A variável dados é a linha que será cadastrada no txt...
             //IMPORTANTE: NÃO REMOVA O PONTO DEPOIS DO CNPJ!
             //ELE SERVE DE DIVISOR DE VARIÁVEIS, SEPARANDO O CNPJ DO RESTANTE DA LINHA!

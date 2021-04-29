@@ -3,7 +3,7 @@ using System.IO;
 
 namespace CRUD_sem_BD
 {
-    class MainClass : Restaurante 
+    class MainClass : Restaurante
     {
         static void Main(string[] args)
         {
@@ -24,7 +24,7 @@ namespace CRUD_sem_BD
 
                 opcao = opcao.ToLower();
 
-                if (opcao =="s") { break; }
+                if (opcao == "s") { break; }
 
                 else if (opcao == "c")
                 {
